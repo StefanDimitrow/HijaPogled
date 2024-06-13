@@ -1,0 +1,44 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.header-img {
+  width: 100%; /* Ensure the div takes full width */
+  height: 300px; /* Adjust this value to the desired height */
+  
+  display: flex; /* Make the div a flex container */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.header-img img {
+  height: 100%; /* Make the image take the full height of the container */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+
+.header-img img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensure image is displayed as a block element */
+}
+
+.header-text {
+  margin-top: 10px;
+  text-align: center;
+}

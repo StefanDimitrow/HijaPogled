@@ -1,12 +1,25 @@
 .navbar-wrapper {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px -6px #222; 
-    background-color: wheat;
-    border-radius: 10px;
-    padding: 10px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
+  position: sticky;
+  background-color: #252728;
+  box-shadow: 15px 5px 5px #7d7757
+}
+
+.navbar-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar-link {
+  padding: 10px;
+  margin: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: oblique;
+  font-size: 1.5rem;
+  text-decoration: 0;
+  text-align: center;
+  color: #79826a;
+}
+a:hover{
+    color: #e5d2b0;
 }
