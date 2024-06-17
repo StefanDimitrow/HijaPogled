@@ -1,44 +1,28 @@
 .header-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 30rem;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
   width: 100%;
-  height: 100%;
-  justify-content: center;
+  overflow: hidden;
 }
 
 .header-img {
-  width: 100%; /* Ensure the div takes full width */
-  height: 300px; /* Adjust this value to the desired height */
-  
-  display: flex; /* Make the div a flex container */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-  overflow: hidden; /* Hide any overflow */
+  width: 100%;
 }
 
 .header-img img {
-  height: 100%; /* Make the image take the full height of the container */
-  width: auto; /* Maintain the aspect ratio */
-}
-
-
-.header-img img {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Ensure image is displayed as a block element */
+  width: 100%;
+  height: 150px; /* Desired height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
 .header-text {
-  margin-top: 10px;
-  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
+
+
