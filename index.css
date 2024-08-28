@@ -1,0 +1,51 @@
+/* General Reset */
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in width and height */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: rgb(213, 240, 205);
+}
+
+/* Header Image */
+.headerImg {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Make sure it spans the full width */
+    display: block;
+}
+
+/* Header Text */
+.headerText {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(213, 240, 205);
+    height: 200px;
+    width: 100%; /* Ensure it spans the full width */
+    line-height: 1;
+}
+
+/* Navbar */
+.navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    background-color: black;
+    display: flex; /* Use flexbox to align buttons evenly */
+    justify-content: space-around; /* Space out the buttons */
+    align-items: center; /* Center buttons vertically */
+}
+
+/* Navbar Buttons */
+.navButton {
+    margin: 0; /* Remove default margin to avoid overflow */
+    padding: 15px; /* Add padding for spacing */
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
