@@ -1,160 +1,262 @@
 /* General Reset */
 * {
-    box-sizing: border-box; /* Ensure padding and borders are included in width and height */
-  }
-  
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    background-color: rgb(213, 240, 205);
-  }
-  
-  /* Header Image */
-  .headerImg {
-    margin: 0;
-    padding: 0;
-    width: 100%; /* Make sure it spans the full width */
-    display: block;
-  }
-  
-  /* Header Text */
-  .headerText {
-    padding: 0;
-    margin: 0;
-    background-color: rgb(213, 240, 205);
-    height: 200px;
-    width: 100%; /* Ensure it spans the full width */
-    line-height: 50px; /* Control the spacing between lines */
-    text-align: center;
+  box-sizing: border-box; /* Ensure padding and borders are included in width and height */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: rgb(213, 240, 205);
+}
+
+/* Header Image */
+.headerImg {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Make sure it spans the full width */
+  display: block;
+}
+
+/* Header Text */
+.headerText {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(213, 240, 205);
+  height: 200px;
+  width: 100%; /* Ensure it spans the full width */
+  line-height: 50px; /* Control the spacing between lines */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border: 0;
+}
+
+/* Navbar */
+.navbar {
+  margin: 0;
+  padding: 5px 0; /* Reduced padding to make the navbar smaller */
+  width: 100%;
+  background-color: black;
+  display: flex; /* Use flexbox to align buttons evenly */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Navbar Buttons */
+.navButton {
+  margin: 0; /* Remove default margin to avoid overflow */
+  padding: 10px 15px; /* Reduced padding for a smaller button size */
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px; /* Reduced font size for a more compact appearance */
+}
+.navButton:hover {
+  color: green;
+}
+
+/* Search Bar */
+.searchBar {
+  margin: 0; /* Remove default margin */
+  padding: 10px 15px; /* Smaller padding for a more compact size */
+  color: black; /* Change text color to black for better readability */
+  background-color: white; /* White background for the search bar */
+  border: 2px solid white; /* White border */
+  border-radius: 25px; /* Rounded corners */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px; /* Smaller font size */
+  outline: none; /* Remove default focus outline */
+  width: 200px; /* Fixed width */
+}
+
+.searchBar::placeholder {
+  color: gray; /* Placeholder text color */
+}
+
+.searchBar:hover,
+.searchBar:focus {
+  border: 2px solid green; /* Change border color on hover or focus */
+}
+
+/* Wrapper for Social Media Icons */
+.wrapper {
+  padding: 30px;
+  display: flex; /* Ensure the icons are aligned horizontally */
+  justify-content: flex-start; /* Align items to the start of the navbar */
+}
+
+/* Social Media Icon Styling */
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+  font-size: 22px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+
+/* Tooltip Styling */
+.wrapper .tooltip {
+  position: absolute;
+  top: -50px; /* Adjust the position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #333; /* Ensure the text color is visible */
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -60px; /* Make sure the tooltip appears above the icon */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+/* Contacts page*/
+.contacts {
+    padding: 20px;
+    background-color: rgba(200, 200, 200, 0.8); /* Light gray background with transparency */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 600px; /* Maximum width of the container */
+    margin: 20px auto; /* Center the container on the page */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    border: 0;
   }
   
-  /* Navbar */
-  .navbar {
-    margin: 0;
-    padding: 5px 0; /* Reduced padding to make the navbar smaller */
-    width: 100%;
-    background-color: black;
-    display: flex; /* Use flexbox to align buttons evenly */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+  .contactsContent {
+    display: flex;
+    flex-direction: column; /* Stack the icons vertically */
+    gap: 15px; /* Space between each icon */
   }
   
-  /* Navbar Buttons */
-  .navButton {
-    margin: 0; /* Remove default margin to avoid overflow */
-    padding: 10px 15px; /* Reduced padding for a smaller button size */
-    color: white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  .contactsContent i {
+    display: flex;
+    align-items: center; /* Center the text vertically with the icon */
+    font-size: 18px; /* Adjust text size for readability */
+    color: #025509; /* Use the same green color for the text */
+  }
+  
+  .contactsContent i a {
+    color: inherit; /* Make sure the link color inherits from the parent */
+    text-decoration: none; /* Remove underline from links */
+    margin-left: 10px; /* Add space between the icon and the text */
+  }
+  
+  .contactsContent i a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+  }
+  .PogledInformation {
+    padding: 20px;
+    background-color: rgba(200, 200, 200, 0.8); /* Light gray background with transparency */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 800px; /* Maximum width of the container */
+    margin: 20px auto; /* Center the container on the page */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px; /* Reduced font size for a more compact appearance */
-  }
-  .navButton:hover {
-    color: green;
+    line-height: 1.6; /* Improve readability with increased line height */
+    color: #025509; /* Green color for the text */
   }
   
-  /* Search Bar */
-  .searchBar {
-    margin: 0; /* Remove default margin */
-    padding: 10px 15px; /* Smaller padding for a more compact size */
-    color: black; /* Change text color to black for better readability */
-    background-color: white; /* White background for the search bar */
-    border: 2px solid white; /* White border */
-    border-radius: 25px; /* Rounded corners */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px; /* Smaller font size */
-    outline: none; /* Remove default focus outline */
-    width: 200px; /* Fixed width */
+
+
+  .Information {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  .searchBar::placeholder {
-    color: gray; /* Placeholder text color */
+  .PogledInformation section {
+    margin-bottom: 20px;
   }
   
-  .searchBar:hover,
-  .searchBar:focus {
-    border: 2px solid green; /* Change border color on hover or focus */
+  .PogledInformation h1 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
   }
   
-  /* Wrapper for Social Media Icons */
-  .wrapper {
-    padding: 30px;
-    display: flex; /* Ensure the icons are aligned horizontally */
-    justify-content: flex-start; /* Align items to the start of the navbar */
+  .PogledInformation p {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
   }
   
-  /* Social Media Icon Styling */
-  .wrapper .icon {
+  .GeneralInformationSection {
     position: relative;
-    background-color: #ffffff;
-    border-radius: 50%;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    display: flex; /* Use flexbox to center content */
-    justify-content: center; /* Center icon horizontally */
-    align-items: center; /* Center icon vertically */
-    font-size: 22px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    color: #333;
-    text-decoration: none;
   }
   
-  /* Tooltip Styling */
-  .wrapper .tooltip {
-    position: absolute;
-    top: -50px; /* Adjust the position above the icon */
-    left: 50%;
-    transform: translateX(-50%);
-    line-height: 1.5;
-    font-size: 14px;
-    background-color: #ffffff;
-    color: #333; /* Ensure the text color is visible */
-    padding: 5px 8px;
+  .GeneralInformation {
+    display: none; /* Hide by default */
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.6;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(220, 220, 220, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggleButton {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color:rgb(2, 85, 9); /* Blue background for the button */
+    border: none;
     border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+    outline: none;
   }
   
-  .wrapper .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background-color: #ffffff;
-    bottom: -3px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
+  .toggleButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
   }
-  
-  .wrapper .icon:hover .tooltip {
-    top: -60px; /* Make sure the tooltip appears above the icon */
-    opacity: 1;
-    pointer-events: auto;
-  }
-  
-  .wrapper .facebook:hover,
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before {
-    background-color: #3b5999;
-    color: #ffffff;
-  }
-  
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
-    background-color: #e1306c;
-    color: #ffffff;
-  }
-  
   
