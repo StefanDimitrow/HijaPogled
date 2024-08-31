@@ -1,51 +1,165 @@
 /* General Reset */
 * {
-    box-sizing: border-box; /* Ensure padding and borders are included in width and height */
+  box-sizing: border-box; /* Ensure padding and borders are included in width and height */
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    background-color: rgb(213, 240, 205);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: rgb(213, 240, 205);
 }
 
 /* Header Image */
 .headerImg {
-    margin: 0;
-    padding: 0;
-    width: 100%; /* Make sure it spans the full width */
-    display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Make sure it spans the full width */
+  display: block;
 }
 
 /* Header Text */
 .headerText {
-    padding: 0;
-    margin: 0;
-    background-color: rgb(213, 240, 205);
-    height: 200px;
-    width: 100%; /* Ensure it spans the full width */
-    line-height: 1;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(213, 240, 205);
+  height: 200px;
+  width: 100%; /* Ensure it spans the full width */
+  line-height: 1;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border: 0;
 }
 
 /* Navbar */
 .navbar {
-    margin: 0;
-    padding: 0;
-    width: 100%; 
-    background-color: black;
-    display: flex; /* Use flexbox to align buttons evenly */
-    justify-content: space-around; /* Space out the buttons */
-    align-items: center; /* Center buttons vertically */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+  display: flex; /* Use flexbox to align buttons evenly */
+  justify-content: space-around; /* Space out the buttons */
+  align-items: center; /* Center buttons vertically */
 }
 
 /* Navbar Buttons */
 .navButton {
-    margin: 0; /* Remove default margin to avoid overflow */
-    padding: 15px; /* Add padding for spacing */
-    color: white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  margin: 0; /* Remove default margin to avoid overflow */
+  padding: 20px; /* Add padding for spacing */
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  box-shadow: 5px;
+}
+.navButton:hover {
+  color: green;
 }
 
+/* Search Bar */
+.searchBar {
+  margin: 0; /* Remove default margin */
+  padding: 10px 15px; /* Smaller padding for a more compact size */
+  color: black; /* Change text color to black for better readability */
+  background-color: white; /* White background for the search bar */
+  border: 2px solid white; /* White border */
+  border-radius: 25px; /* Rounded corners */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px; /* Smaller font size */
+  outline: none; /* Remove default focus outline */
+  width: 200px; /* Fixed width */
+}
+
+.searchBar::placeholder {
+  color: gray; /* Placeholder text color */
+}
+
+.searchBar:hover,
+.searchBar:focus {
+  border: 2px solid green; /* Change border color on hover or focus */
+}
+
+/* Navbar Container Adjustment */
+.navbar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+}
+
+.navButton {
+  margin-right: 20px; /* Add spacing between buttons */
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
