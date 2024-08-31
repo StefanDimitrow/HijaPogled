@@ -1,84 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <!-- Font Awesome 5.15.1 CSS -->
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>"Хижа Поглед"</title>
-  </head>
-  <body>
+</head>
+<body>
     <!-- Header -->
     <header class="header">
-      <div class="headerImg">
-        <img src="./assets/Frame 1.png" alt="Лого на хижа Поглед" />
-      </div>
-      <div class="headerText">
-        Насладете се на прекрасна природа и уютна обстановка при нас! <br>
-        Информация за хижата можете да намерите <a href="">Тук</a><br>
-        За резервации: <a href="">Контакти</a>
+        <div class="headerImg">
+            <img src="./assets/Frame 1.png" alt="Лого на хижа Поглед" />
         </div>
-
-
+        <div class="headerText">
+            Насладете се на прекрасна природа и уютна обстановка при нас! <br>
+            Информация за хижата можете да намерите <a href="#">Тук</a><br>
+            За резервации: <a href="#">Контакти</a>
+        </div>
     </header>
 
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="wrapper">
-        <a href="#" class="icon facebook">
-          <div class="tooltip">Facebook</div>
-          <span><i class="fab fa-facebook-f"></i></span>
-        </a>
-        <a href="#" class="icon instagram">
-          <div class="tooltip">Instagram</div>
-          <span><i class="fab fa-instagram"></i></span>
-        </a>
+        <div class="wrapper">
+            <a href="#" class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+            </a>
         </div>
-      <button class="navButton">Начало</button>
-      <button class="navButton">Контакти</button>
-      <button class="navButton">Информация</button>
-      <button class="navButton">Галерия</button>
-      <label for="search" class="visually-hidden">Търсене</label>
-      <input
-        id="search"
-        class="searchBar"
-        type="text"
-        placeholder="Търсене..."
-      />
+        <button class="navButton">Начало</button>
+        <button class="navButton">Контакти</button>
+        <button class="navButton">Информация</button>
+        <button class="navButton">Галерия</button>
+        <label for="search" class="visually-hidden">Търсене</label>
+        <input
+            id="search"
+            class="searchBar"
+            type="text"
+            placeholder="Търсене..."
+        />
     </nav>
 
     <!-- Contacts -->
-      <article class="contacts">
+    <article class="contacts">
         <section class="contactsContent">
-<i class="fa fa-mobile-phone" style="font-size:48px;color:rgb(2, 85, 9)">: +359 88 823 4675</i>
-<i class="fa fa-envelope" style="font-size:48px;color:rgb(2, 85, 9)">: hijapogled@gmail.com</i>
-<i class="fab fa-facebook" style="font-size:48px;color:rgb(2, 85, 9); margin-right: 20px;">: <a href="">"Хижа Поглед"</a></i>
-<i class="fab fa-instagram" style="font-size:48px;color:rgb(2, 85, 9)"> <a href="">: "Хижа Поглед"</a></i>
+            <i class="fa fa-mobile-phone" style="font-size:48px;color:rgb(2, 85, 9)">: +359 88 823 4675</i>
+            <i class="fa fa-envelope" style="font-size:48px;color:rgb(2, 85, 9)">: hijapogled@gmail.com</i>
+            <i class="fab fa-facebook" style="font-size:48px;color:rgb(2, 85, 9); margin-right: 20px;">: <a href="#">"Хижа Поглед"</a></i>
+            <i class="fab fa-instagram" style="font-size:48px;color:rgb(2, 85, 9)">: <a href="#">"Хижа Поглед"</a></i>
         </section>
-      </article>
-    </main>
-  </body>
+    </article>
+
+    <!-- Information -->
+    <section class="Information">
+        <article class="PogledInformation">
+            <section> 
+                <h1>"Хижа Поглед"</h1>
+                <p>се намира на 530 м. над морското равнище в местността "Къркатлъка" над село Тополица. Кристален планински въздух и уютна атмосфера за отмора от делничните дни. Разполага с 25 легла, разпределени в една стая с четири легла, пет стаи с по три легла и три стаи с по две легла. Хижата разполага с четири бани със санитарни възли по две на етаж, кухня, зала с камина, безжичен интернет и отопление на пелети.</p>
+            </section>
+            
+            <section class="GeneralInformationSection">
+                <button class="toggleButton">Информация за с.Тополица</button>
+                <div class="GeneralInformation" id="generalInfo">
+                    <p>Село Тополица (област Бургас) се намира в Юго-източна България и е част от община Айтос. Разположено е в полите на южния клон на Източна Стара планина (рида Караманеца). Над селото е най-високият връх в околността - Острица (висок 666 м.). Тополица граничи на изток със землищата на селата Карагеоргиево и Поляново, на юг със село Черноград, на запад със село Раклиново, а на север е Стара планина. През селото минава ЖП-линията Бургас-София.</p>
+                    <p>Тополица е добре поддържано, електрофицирано, водоснабдено, радиофицирано и телефонизирано село. В землището се отглеждат житни култури: пшеница, ръж, ечемик, овес, грах; техническите: царевица, слънчоглед, захарно цвекло, тютюн, памук, зеленчуци: домати, пипер, картофи, краставици; трайни насаждения: лозя и овошки различни видове.</p>
+                    <p>Името на селото дават многобройните тополи, засадени от десетилетия (старото име на селото е "Кавак махала", което е "тополова махала" на турски). От двете страни на селото има свободно течащи води – "Кайнака" и "Бешбунар", a в центъра водата е каптирана и изведена в много чешми.</p>
+                </div>
+            </section>
+        </article>
+    </section>
+</body>
 </html>
-
-
-<!-- Information-->
-<div class="Information">
-  <article class="PogledInformation">
-    <section> 
-      <h1>"Хижа Поглед"</h1>
-      <p>се намира на 530 м. над морското равнище в местността "Къркатлъка" над село Тополица. Кристален планински въздух и уютна атмосфера за отмора от делничните дни. Разполага с 25 легла, разпределени в една стая с четири легла, пет стаи с по три легла и три стаи с по две легла. Хижата разполага с четири бани със санитарни възли по две на етаж, кухня, зала с камина, безжичен интернет и отопление на пелети.</p>
-    </section>
-    
-    <section class="GeneralInformationSection">
-      <button class="toggleButton">Информация за с.Тополица</button>
-      <div class="GeneralInformation" id="generalInfo">
-        <p>Село Тополица (област Бургас) се намира в Юго-източна България и е част от община Айтос. Разположено е в полите на южния клон на Източна Стара планина (рида Караманеца). Над селото е най-високият връх в околността - Острица (висок 666 м.). Тополица граничи на изток със землищата на селата Карагеоргиево и Поляново, на юг със село Черноград, на запад със село Раклиново, а на север е Стара планина. През селото минава ЖП-линията Бургас-София.</p>
-        <p>Тополица е добре поддържано, електрофицирано, водоснабдено, радиофицирано и телефонизирано село. В землището се отглеждат житни култури: пшеница, ръж, ечемик, овес, грах; техническите: царевица, слънчоглед, захарно цвекло, тютюн, памук, зеленчуци: домати, пипер, картофи, краставици; трайни насаждения: лозя и овошки различни видове.</p>
-        <p>Името на селото дават многобройните тополи, засадени от десетилетия (старото име на селото е "Кавак махала", което е "тополова махала" на турски). От двете страни на селото има свободно течащи води – "Кайнака" и "Бешбунар", a в центъра водата е каптирана и изведена в много чешми.</p>
-      </div>
-    </section>
-  </article>
-</div>
