@@ -159,104 +159,111 @@ body {
 
 /* Contacts page*/
 .contacts {
-    padding: 20px;
-    background-color: rgba(200, 200, 200, 0.8); /* Light gray background with transparency */
-    border-radius: 15px; /* Rounded corners */
-    max-width: 600px; /* Maximum width of the container */
-    margin: 20px auto; /* Center the container on the page */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .contactsContent {
-    display: flex;
-    flex-direction: column; /* Stack the icons vertically */
-    gap: 15px; /* Space between each icon */
-  }
-  
-  .contactsContent i {
-    display: flex;
-    align-items: center; /* Center the text vertically with the icon */
-    font-size: 18px; /* Adjust text size for readability */
-    color: #025509; /* Use the same green color for the text */
-  }
-  
-  .contactsContent i a {
-    color: inherit; /* Make sure the link color inherits from the parent */
-    text-decoration: none; /* Remove underline from links */
-    margin-left: 10px; /* Add space between the icon and the text */
-  }
-  
-  .contactsContent i a:hover {
-    text-decoration: underline; /* Underline the link on hover */
-  }
-  .PogledInformation {
-    padding: 20px;
-    background-color: rgba(200, 200, 200, 0.8); /* Light gray background with transparency */
-    border-radius: 15px; /* Rounded corners */
-    max-width: 800px; /* Maximum width of the container */
-    margin: 20px auto; /* Center the container on the page */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6; /* Improve readability with increased line height */
-    color: #025509; /* Green color for the text */
-  }
-  
+  padding: 20px;
+  background-color: rgba(
+    200,
+    200,
+    200,
+    0.8
+  ); /* Light gray background with transparency */
+  border-radius: 15px; /* Rounded corners */
+  max-width: 600px; /* Maximum width of the container */
+  margin: 20px auto; /* Center the container on the page */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.contactsContent {
+  display: flex;
+  flex-direction: column; /* Stack the icons vertically */
+  gap: 15px; /* Space between each icon */
+}
 
-  .Information {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(240, 240, 240, 0.9);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .PogledInformation section {
-    margin-bottom: 20px;
-  }
-  
-  .PogledInformation h1 {
-    font-size: 24px;
-    color: #000000;
-    margin-bottom: 10px;
-  }
-  
-  .PogledInformation p {
-    font-size: 18px;
-    color: #333333;
-    line-height: 1.6;
-  }
-  
-  .GeneralInformationSection {
-    position: relative;
-  }
-  
-  .GeneralInformation {
-    display: none; /* Hide by default */
-    font-size: 18px;
-    color: #000000;
-    line-height: 1.6;
-    margin-top: 15px;
-    padding: 15px;
-    background-color: rgba(220, 220, 220, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .toggleButton {
-    padding: 10px 15px;
-    font-size: 18px;
-    color: #ffffff;
-    background-color:rgb(2, 85, 9); /* Blue background for the button */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .toggleButton:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-  
+.contactsContent i {
+  display: flex;
+  align-items: center; /* Center the text vertically with the icon */
+  font-size: 18px; /* Adjust text size for readability */
+  color: #025509; /* Use the same green color for the text */
+}
+
+.contactsContent i a {
+  color: inherit; /* Make sure the link color inherits from the parent */
+  text-decoration: none; /* Remove underline from links */
+  margin-left: 10px; /* Add space between the icon and the text */
+}
+
+.contactsContent i a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+.PogledInformation {
+  padding: 20px;
+  background-color: rgba(
+    200,
+    200,
+    200,
+    0.8
+  ); /* Light gray background with transparency */
+  border-radius: 15px; /* Rounded corners */
+  max-width: 800px; /* Maximum width of the container */
+  margin: 20px auto; /* Center the container on the page */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6; /* Improve readability with increased line height */
+  color: #025509; /* Green color for the text */
+}
+
+.Information {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.PogledInformation section {
+  margin-bottom: 20px;
+}
+
+.PogledInformation h1 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.PogledInformation p {
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.GeneralInformationSection {
+  position: relative;
+}
+
+.GeneralInformation {
+  display: none; /* Hide by default */
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.6;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: rgba(220, 220, 220, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggleButton {
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: rgb(2, 85, 9); /* Blue background for the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.toggleButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
