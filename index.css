@@ -54,6 +54,8 @@ body {
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px; /* Reduced font size for a more compact appearance */
+  text-decoration: none;
+
 }
 .navButton:hover {
   color: green;
@@ -168,7 +170,7 @@ body {
   ); /* Light gray background with transparency */
   border-radius: 15px; /* Rounded corners */
   max-width: 600px; /* Maximum width of the container */
-  margin: 20px auto; /* Center the container on the page */
+  margin: 100px auto; /* Center the container on the page */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   font-family: Arial, Helvetica, sans-serif;
 }
