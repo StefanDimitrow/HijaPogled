@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
     <!-- Font Awesome 5.15.1 CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <title>"Хижа Поглед"</title>
+    <title>Хижа Поглед</title>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <div class="headerImg">
-            <img src="./assets/Frame 1.png" alt="Лого на хижа Поглед" />
+            <img src="./assets/Frame 1.png" alt="Лого на хижа Поглед">
         </div>
         <div class="headerText">
             Насладете се на прекрасна природа и уютна обстановка при нас! <br>
@@ -34,29 +36,24 @@
                 <span><i class="fab fa-instagram"></i></span>
             </a>
         </div>
-        <li><a class="navButton" href="index.html">Начало</a></li>
-        <li><a class="navButton" href="contacts.html">Контакти</a></li>
-        <li><a class="navButton" href="index.html">Информация</a></li>
-        <li><a class="navButton" href="index.html">Галерия</a></li>
+        <div class="navButtonWrapper">
+            <a class="navButton" href="index.html">Начало</a>
+            <a class="navButton" href="contacts.html">Контакти</a>
+            <a class="navButton" href="index.html">Информация</a>
+            <a class="navButton" href="index.html">Галерия</a>
+        </div>
         <label for="search" class="visually-hidden">Търсене</label>
-        <input
-            id="search"
-            class="searchBar"
-            type="text"
-            placeholder="Търсене..."
-        />
+        <input id="search" class="searchBar" type="text" placeholder="Търсене...">
     </nav>
 
-    
-
-    <!-- Information -->
+    <!-- Information Section -->
     <section class="Information">
         <article class="PogledInformation">
-            <section> 
+            <section>
                 <h1>"Хижа Поглед"</h1>
                 <p>се намира на 530 м. над морското равнище в местността "Къркатлъка" над село Тополица. Кристален планински въздух и уютна атмосфера за отмора от делничните дни. Разполага с 25 легла, разпределени в една стая с четири легла, пет стаи с по три легла и три стаи с по две легла. Хижата разполага с четири бани със санитарни възли по две на етаж, кухня, зала с камина, безжичен интернет и отопление на пелети.</p>
             </section>
-            
+
             <section class="GeneralInformationSection">
                 <button class="toggleButton">Информация за с.Тополица</button>
                 <div class="GeneralInformation" id="generalInfo">
@@ -67,5 +64,7 @@
             </section>
         </article>
     </section>
+
 </body>
+
 </html>
