@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   box-sizing: border-box;
 }
@@ -60,6 +60,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-decoration: none;
+  padding:10px
 }
 
 .navButton:hover {
@@ -155,7 +156,7 @@ body {
 }
 
 /* Information Section */
-.Information {
+.information {
   max-width: 900px;
   margin: 20px auto;
   padding: 20px;
@@ -164,24 +165,24 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.PogledInformation section {
+.pogledInformation section {
   margin-bottom: 20px;
 }
 
-.PogledInformation h1 {
+.pogledInformation h1 {
   font-size: 24px;
   color: #000;
   margin-bottom: 10px;
 }
 
-.PogledInformation p {
+.pogledInformation p {
   font-size: 18px;
   color: #333;
   line-height: 1.6;
 }
 
 /* Hidden Information Section */
-.GeneralInformation {
+.generalInformation {
   display: none;
   padding: 15px;
   background-color: rgba(220, 220, 220, 0.8);
@@ -212,7 +213,7 @@ body {
 
 
 /* Hidden Information Section */
-.GeneralInformation {
+.generalInformation {
   display: none;
   padding: 15px;
   background-color: rgba(220, 220, 220, 0.8);
@@ -241,8 +242,9 @@ body {
   display: block !important;
 }
 /* Contact Section */
+
 .contactsContent {
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   padding: 20px;
   margin-top: 20px;
