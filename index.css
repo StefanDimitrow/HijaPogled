@@ -28,6 +28,22 @@ body {
   font-size: 30px;
   line-height: 50px;
 }
+.headerText a{
+  background-color: black;
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  border-style:inset;
+  border-radius: 10px;
+}
+.headerText a:hover{
+  color: green;
+}
+.headerText a:visited{
+  text-decoration: none;
+}
 
 /* Navbar */
 .navbar {
