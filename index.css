@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -28,20 +27,20 @@ body {
   font-size: 30px;
   line-height: 50px;
 }
-.headerText a{
+.headerText a {
   background-color: black;
-  color:white;
+  color: white;
   text-decoration: none;
   text-align: center;
   padding: 10px;
   font-size: 30px;
-  border-style:inset;
+  border-style: inset;
   border-radius: 10px;
 }
-.headerText a:hover{
+.headerText a:hover {
   color: green;
 }
-.headerText a:visited{
+.headerText a:visited {
   text-decoration: none;
 }
 
@@ -76,7 +75,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-decoration: none;
-  padding:10px
+  padding: 10px;
 }
 
 .navButton:hover {
@@ -227,7 +226,6 @@ body {
   display: block !important;
 }
 
-
 /* Hidden Information Section */
 .generalInformation {
   display: none;
@@ -285,5 +283,3 @@ body {
 .contactsContent a:hover {
   text-decoration: underline;
 }
-
- 
