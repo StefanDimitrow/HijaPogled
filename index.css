@@ -256,7 +256,11 @@ body {
   display: block !important;
 }
 /* Contact Section */
-
+.contactsCard {
+  margin: 5rem;
+  border-style: solid;
+  border-color: green;
+}
 .contactsContent {
   text-align: center;
   font-size: 20px;
@@ -282,4 +286,29 @@ body {
 
 .contactsContent a:hover {
   text-decoration: underline;
+}
+
+/* Img Grid */
+.imgSections {
+  text-align: center;
+  margin: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(2, 85, 9);
+  font-size: 24px;
+}
+div.scroll-container {
+  margin: 1.5rem;
+  background-color: black;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+.responsive {
+  max-width: 20%;
+  height: auto;
 }
