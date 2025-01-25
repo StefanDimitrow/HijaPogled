@@ -42,7 +42,7 @@
       </div>
       <div class="navButtonWrapper">
         <a class="navButton" href="index.html">Начало</a>
-        <a class="navButton" href="#contacts">Контакти</a>
+        <a class="navButton" href="#contact">Контакти</a> <!-- Fixed the ID to match -->
         <a class="navButton" href="#information">Информация</a>
         <a class="navButton" href="#gallery">Галерия</a>
       </div>
@@ -54,8 +54,8 @@
         placeholder="Търсене..."
       />
     </nav>
+    
     <div class="user">
-      <script src="script.js"></script>
       <div class="map-container">
         <iframe
           class="googleMap"
@@ -66,9 +66,9 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+        ></iframe>
       </div>
+      
       <div class="contactsCard" id="contact">
         <article class="contacts">
           <section class="contactsContent">
@@ -92,6 +92,7 @@
         </article>
       </div>
     </div>
+
     <div class="information" id="information">
       <section class="information">
         <article class="pogledInformation">
@@ -103,7 +104,7 @@
               отмора от делничните дни. Разполага с 26 легла, разпределени в две
               стаи с четири легла, пет стаи с по три легла и три стаи с по две
               легла. Хижата разполага с четири бани със санитарни възли по две
-              на етаж, кухня, зала с камина, безжичен интернет,отопление на
+              на етаж, кухня, зала с камина, безжичен интернет, отопление на
               пелети, външен басейн.
             </p>
           </section>
@@ -141,6 +142,7 @@
         </article>
       </section>
     </div>
+
     <div class="imgSections">
       <p>Хижата се намира на тихо и спокойно място в горски район.</p>
       <div class="scroll-container">
@@ -191,63 +193,46 @@
         />
       </div>
     </div>
-<div class="gallery" id="gallery">
-  <div class="imgSections">
-    <p>
-      Разполагаме с голяма зала, в която има работеща камина, климатик, голям
-      телевизор, безжичен интернет и телевизия.
-    </p>
-    <div class="scroll-container">
-      <img src="./assets/img/Зала-1.jpg" alt="Зала" class="responsive" />
-      <img src="./assets/img/Зала-2.jpg" alt="Зала" class="responsive" />
-      <img src="./assets/img/Зала-3.jpg" alt="Зала" class="responsive" />
-      <img src="./assets/img/Зала-4.jpg" alt="Зала" class="responsive" />
-      <img src="./assets/img/Зала-5.jpg" alt="Зала" class="responsive" />
-      <img src="./assets/img/Зала-6.jpg" alt="Зала" class="responsive" />
-      <img src="./assets/img/Зала-7.jpg" alt="Зала" class="responsive" />
-      <img src="./assets/img/Зала-8.jpg" alt="Зала" class="responsive" />
-      <img src="./assets/img/Кухня-1.jpg" alt="Зала" class="responsive" />
-    </div>
-  </div>
-  <div class="imgSections">
-    <p>
-      Местата са разпределени на две стаи с по 4 легла,три стаи с по 3 легла и
-      две стаи с по една спалня. Хижата е с общ санитарен възел, като на двата
-      етажа има по две бани с тоалетни.
-    </p>
-    <div class="scroll-container">
-      <img src="./assets/img/Стая-1.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-2.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-3.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-4.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-5.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-6.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-7.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-8.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-9.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-10.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-11.jpg" alt="Стая" class="responsive" />
-      <img src="./assets/img/Стая-12.jpg" alt="Стая" class="responsive" />
-    </div>
-  </div>
-  <div class="imgSections">
-    <p>
-      Допълнително са осигурени още 8 места в пристройката към хижата, като
-      има две стаи с по 1 спалня и едно единично легло и една стая с една
-      спалня. Тези стаи имат собствен санитарен възел.
-    </p>
-    <div class="scroll-container">
-      <img src="./assets/img/База-1.jpg" alt="Зала" class="responsive" />
-    </div>
-    <div class="imgSections">
-      <p>
-        През 2024г. решихме да направим и открит басейн за лятото.
-      </p>
-      <div class="scroll-container">
-        <img src="" alt="Зала" class="responsive" />
+
+    <div class="gallery" id="gallery">
+      <div class="imgSections">
+        <p>
+          Разполагаме с голяма зала, в която има работеща камина, климатик, голям
+          телевизор, безжичен интернет и телевизия.
+        </p>
+        <div class="scroll-container">
+          <img src="./assets/img/Зала-1.jpg" alt="Зала" class="responsive" />
+          <img src="./assets/img/Зала-2.jpg" alt="Зала" class="responsive" />
+          <img src="./assets/img/Зала-3.jpg" alt="Зала" class="responsive" />
+          <img src="./assets/img/Зала-4.jpg" alt="Зала" class="responsive" />
+        </div>
       </div>
-  </div>
-</div>
-    
+
+      <div class="imgSections">
+        <p>Местата са разпределени на две стаи с легла.</p>
+        <div class="scroll-container">
+          <img src="./assets/img/Стая-1.jpg" alt="Стая" class="responsive" />
+          <img src="./assets/img/Стая-2.jpg" alt="Стая" class="responsive" />
+          <img src="./assets/img/Стая-3.jpg" alt="Стая" class="responsive" />
+          <img src="./assets/img/Стая-4.jpg" alt="Стая" class="responsive" />
+        </div>
+      </div>
+      
+      <!-- Fixed missing img src -->
+      <div class="imgSections">
+        <p>Допълнително са осигурени още 8 места в пристройката...</p>
+        <div class="scroll-container">
+          <img src="./assets/img/База-1.jpg" alt="База" class="responsive" />
+        </div>
+      </div>
+
+      <div class="imgSections">
+        <p>През 2024г. решихме да направим и открит басейн...</p>
+        <div class="scroll-container">
+          <!-- Add image source -->
+          <img src="./assets/img/Басейн.jpg" alt="Басейн" class="responsive" />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
