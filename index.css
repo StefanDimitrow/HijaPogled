@@ -87,14 +87,6 @@ body {
   padding: 10px 15px;
   background-color: white;
   border: 2px solid white;
-  border-radius: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  width: 200px;
-}
-
-.searchBar::placeholder {
-  color: gray;
 }
 
 .searchBar:hover,
@@ -226,35 +218,6 @@ body {
   display: block !important;
 }
 
-/* Hidden Information Section */
-.generalInformation {
-  display: none;
-  padding: 15px;
-  background-color: rgba(220, 220, 220, 0.8);
-  border-radius: 10px;
-  margin-top: 15px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Toggle Button */
-.toggleButton {
-  padding: 10px 15px;
-  font-size: 18px;
-  color: white;
-  background-color: #025509;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.toggleButton:hover {
-  background-color: #0056b3;
-}
-
-/* Fix for the toggle display */
-.show {
-  display: block !important;
-}
 /* Contact Section */
 .contactsCard {
   margin: 5rem;
@@ -312,40 +275,11 @@ div.scroll-container img {
   max-width: 20%;
   height: auto;
 }
+
 /* Google Maps*/
 .user {
   display: flex;
   justify-content: center;
   padding: 1.5rem;
 }
-.rating-container {
-  text-align: center;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
-.star-rating {
-  font-size: 2rem;
-  color: #ccc; /* Default gray for unselected stars */
-}
-
-.star {
-  cursor: pointer;
-  padding: 0 5px;
-  transition: color 0.2s ease;
-}
-
-.star:hover {
-  color: #ff9800; /* Change to yellow when hovering over stars */
-}
-
-.star.selected {
-  color: #ff9800; /* Yellow for selected stars */
-}
-
-.rating-output {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-}
