@@ -23,8 +23,8 @@
       <div class="headerText">
         Насладете се на прекрасна природа и уютна обстановка при нас! <br />
         Информация за хижата можете да намерите
-        <a href="information.html">Тук</a><br />
-        За резервации: <a href="contacts.html">Контакти</a>
+        <a href="#information">Тук</a><br />
+        За резервации: <a href="#contact">Контакти</a>
       </div>
     </header>
 
@@ -42,9 +42,9 @@
       </div>
       <div class="navButtonWrapper">
         <a class="navButton" href="index.html">Начало</a>
-        <a class="navButton" href="contacts.html">Контакти</a>
-        <a class="navButton" href="information.html">Информация</a>
-        <a class="navButton" href="gallery.html">Галерия</a>
+        <a class="navButton" href="#contacts">Контакти</a>
+        <a class="navButton" href="#information">Информация</a>
+        <a class="navButton" href="#gallery">Галерия</a>
       </div>
       <label for="search" class="visually-hidden">Търсене</label>
       <input
@@ -55,20 +55,6 @@
       />
     </nav>
     <div class="user">
-      <div class="rating-container">
-        <h2>Rate this Product</h2>
-        <div class="star-rating">
-          <span class="star" data-value="1">&#9733;</span>
-          <span class="star" data-value="2">&#9733;</span>
-          <span class="star" data-value="3">&#9733;</span>
-          <span class="star" data-value="4">&#9733;</span>
-          <span class="star" data-value="5">&#9733;</span>
-        </div>
-        <div class="rating-output">
-          <p>Your Rating: <span id="rating-output">0</span> / 5</p>
-        </div>
-      </div>
-
       <script src="script.js"></script>
       <div class="map-container">
         <iframe
@@ -83,6 +69,185 @@
         >
         </iframe>
       </div>
+      <div class="contactsCard" id="contact">
+        <article class="contacts">
+          <section class="contactsContent">
+            <p>
+              <i class="fa fa-mobile-phone" style="font-size: 48px"></i>
+              <span class="contact-info">+359 88 823 4675</span>
+            </p>
+            <p>
+              <i class="fa fa-envelope" style="font-size: 48px"></i>
+              <span class="contact-info">hijapogled@gmail.com</span>
+            </p>
+            <p>
+              <i class="fab fa-facebook" style="font-size: 48px"></i>
+              <span class="contact-info"><a href="#">"Хижа Поглед"</a></span>
+            </p>
+            <p>
+              <i class="fab fa-instagram" style="font-size: 48px"></i>
+              <span class="contact-info"><a href="#">"Хижа Поглед"</a></span>
+            </p>
+          </section>
+        </article>
+      </div>
     </div>
+    <div class="information" id="information">
+      <section class="information">
+        <article class="pogledInformation">
+          <section>
+            <h1>"Хижа Поглед"</h1>
+            <p>
+              се намира на 530 м. над морското равнище в местността "Къркатлъка"
+              над село Тополица. Кристален планински въздух и уютна атмосфера за
+              отмора от делничните дни. Разполага с 26 легла, разпределени в две
+              стаи с четири легла, пет стаи с по три легла и три стаи с по две
+              легла. Хижата разполага с четири бани със санитарни възли по две
+              на етаж, кухня, зала с камина, безжичен интернет,отопление на
+              пелети, външен басейн.
+            </p>
+          </section>
+
+          <section class="generalInformationSection">
+            <button class="toggleButton">Информация за с.Тополица</button>
+            <div class="generalInformation" id="generalInfo">
+              <p>
+                Село Тополица (област Бургас) се намира в Юго-източна България и
+                е част от община Айтос. Разположено е в полите на южния клон на
+                Източна Стара планина (рида Караманеца). Над селото е
+                най-високият връх в околността - Острица (висок 666 м.).
+                Тополица граничи на изток със землищата на селата Карагеоргиево
+                и Поляново, на юг със село Черноград, на запад със село
+                Раклиново, а на север е Стара планина. През селото минава
+                ЖП-линията Бургас-София.
+              </p>
+              <p>
+                Тополица е добре поддържано, електрофицирано, водоснабдено,
+                радиофицирано и телефонизирано село. В землището се отглеждат
+                житни култури: пшеница, ръж, ечемик, овес, грах; техническите:
+                царевица, слънчоглед, захарно цвекло, тютюн, памук, зеленчуци:
+                домати, пипер, картофи, краставици; трайни насаждения: лозя и
+                овошки различни видове.
+              </p>
+              <p>
+                Името на селото дават многобройните тополи, засадени от
+                десетилетия (старото име на селото е "Кавак махала", което е
+                "тополова махала" на турски). От двете страни на селото има
+                свободно течащи води – "Кайнака" и "Бешбунар", a в центъра
+                водата е каптирана и изведена в много чешми.
+              </p>
+            </div>
+          </section>
+        </article>
+      </section>
+    </div>
+    <div class="imgSections">
+      <p>Хижата се намира на тихо и спокойно място в горски район.</p>
+      <div class="scroll-container">
+        <img
+          src="./assets/img/Природа-1.jpg"
+          alt="Природа"
+          class="responsive"
+        />
+        <img
+          src="./assets/img/Природа-2.jpg"
+          alt="Природа"
+          class="responsive"
+        />
+        <img
+          src="./assets/img/Природа-3.jpg"
+          alt="Природа"
+          class="responsive"
+        />
+        <img
+          src="./assets/img/Природа-4.jpg"
+          alt="Природа"
+          class="responsive"
+        />
+        <img
+          src="./assets/img/Природа-5.jpg"
+          alt="Природа"
+          class="responsive"
+        />
+        <img
+          src="./assets/img/Природа-6.jpg"
+          alt="Природа"
+          class="responsive"
+        />
+        <img
+          src="./assets/img/Природа-7.jpg"
+          alt="Природа"
+          class="responsive"
+        />
+        <img
+          src="./assets/img/Природа-8.jpg"
+          alt="Природа"
+          class="responsive"
+        />
+        <img
+          src="./assets/img/Природа-9.jpg"
+          alt="Природа"
+          class="responsive"
+        />
+      </div>
+    </div>
+<div class="gallery" id="gallery">
+  <div class="imgSections">
+    <p>
+      Разполагаме с голяма зала, в която има работеща камина, климатик, голям
+      телевизор, безжичен интернет и телевизия.
+    </p>
+    <div class="scroll-container">
+      <img src="./assets/img/Зала-1.jpg" alt="Зала" class="responsive" />
+      <img src="./assets/img/Зала-2.jpg" alt="Зала" class="responsive" />
+      <img src="./assets/img/Зала-3.jpg" alt="Зала" class="responsive" />
+      <img src="./assets/img/Зала-4.jpg" alt="Зала" class="responsive" />
+      <img src="./assets/img/Зала-5.jpg" alt="Зала" class="responsive" />
+      <img src="./assets/img/Зала-6.jpg" alt="Зала" class="responsive" />
+      <img src="./assets/img/Зала-7.jpg" alt="Зала" class="responsive" />
+      <img src="./assets/img/Зала-8.jpg" alt="Зала" class="responsive" />
+      <img src="./assets/img/Кухня-1.jpg" alt="Зала" class="responsive" />
+    </div>
+  </div>
+  <div class="imgSections">
+    <p>
+      Местата са разпределени на две стаи с по 4 легла,три стаи с по 3 легла и
+      две стаи с по една спалня. Хижата е с общ санитарен възел, като на двата
+      етажа има по две бани с тоалетни.
+    </p>
+    <div class="scroll-container">
+      <img src="./assets/img/Стая-1.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-2.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-3.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-4.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-5.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-6.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-7.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-8.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-9.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-10.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-11.jpg" alt="Стая" class="responsive" />
+      <img src="./assets/img/Стая-12.jpg" alt="Стая" class="responsive" />
+    </div>
+  </div>
+  <div class="imgSections">
+    <p>
+      Допълнително са осигурени още 8 места в пристройката към хижата, като
+      има две стаи с по 1 спалня и едно единично легло и една стая с една
+      спалня. Тези стаи имат собствен санитарен възел.
+    </p>
+    <div class="scroll-container">
+      <img src="./assets/img/База-1.jpg" alt="Зала" class="responsive" />
+    </div>
+    <div class="imgSections">
+      <p>
+        През 2024г. решихме да направим и открит басейн за лятото.
+      </p>
+      <div class="scroll-container">
+        <img src="" alt="Зала" class="responsive" />
+      </div>
+  </div>
+</div>
+    
   </body>
 </html>
