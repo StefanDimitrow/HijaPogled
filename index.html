@@ -54,7 +54,35 @@
         placeholder="Търсене..."
       />
     </nav>
+    <div class="user">
+      <div class="rating-container">
+        <h2>Rate this Product</h2>
+        <div class="star-rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <div class="rating-output">
+          <p>Your Rating: <span id="rating-output">0</span> / 5</p>
+        </div>
+      </div>
 
-    <div class="userRating"></div>
+      <script src="script.js"></script>
+      <div class="map-container">
+        <iframe
+          class="googleMap"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929.745403886897!2d27.12837187528625!3d42.75143851028696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a67bc07d76a70d%3A0x6a340c492d6c59d5!2z0KXQuNC20LAgItCf0L7Qs9C70LXQtCI!5e0!3m2!1sbg!2sbg!4v1737799182565!5m2!1sbg!2sbg"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </div>
   </body>
 </html>
