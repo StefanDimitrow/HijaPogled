@@ -21,10 +21,8 @@
         <img src="./assets/Frame 1.png" alt="Лого на хижа Поглед" />
       </div>
       <div class="headerText">
-        Насладете се на прекрасна природа и уютна обстановка при нас! <br />
-        Информация за хижата можете да намерите
-        <a href="#information">Тук</a><br />
-        За резервации: <a href="#contact">Контакти</a>
+        <p>Насладете се на прекрасна природа и уютна обстановка при нас!</p>
+        
       </div>
     </header>
 
@@ -42,54 +40,236 @@
       </div>
       <div class="navButtonWrapper">
         <a class="navButton" href="index.html">Начало</a>
-        <a class="navButton" href="#contact">Контакти</a> <!-- Fixed the ID to match -->
+        <a class="navButton" href="#contact">Контакти</a>
+        <!-- Fixed the ID to match -->
         <a class="navButton" href="#information">Информация</a>
         <a class="navButton" href="#gallery">Галерия</a>
       </div>
-      <label for="search" class="visually-hidden">Търсене</label>
-      <input
-        id="search"
-        class="searchBar"
-        type="text"
-        placeholder="Търсене..."
-      />
     </nav>
-    
-    <div class="user">
-      <div class="map-container">
-        <iframe
-          class="googleMap"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929.745403886897!2d27.12837187528625!3d42.75143851028696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a67bc07d76a70d%3A0x6a340c492d6c59d5!2z0KXQuNC20LAgItCf0L7Qs9C70LXQtCI!5e0!3m2!1sbg!2sbg!4v1737799182565!5m2!1sbg!2sbg"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+
+    <div class="imgSections">
+      <p>Хижата се намира на тихо и спокойно място в горски район.</p>
+      <div class="scroll-container">
+        <img
+          src="./assets/img/Природа-1.jpg"
+          alt="Природа"
+          class="responsive"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="./assets/img/Природа-2.jpg"
+          alt="Природа"
+          class="responsive"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="./assets/img/Природа-3.jpg"
+          alt="Природа"
+          class="responsive"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="./assets/img/Природа-4.jpg"
+          alt="Природа"
+          class="responsive"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="./assets/img/Природа-5.jpg"
+          alt="Природа"
+          class="responsive"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="./assets/img/Природа-6.jpg"
+          alt="Природа"
+          class="responsive"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="./assets/img/Природа-7.jpg"
+          alt="Природа"
+          class="responsive"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="./assets/img/Природа-8.jpg"
+          alt="Природа"
+          class="responsive"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="./assets/img/Природа-9.jpg"
+          alt="Природа"
+          class="responsive"
+          onclick="openModal(this.src)"
+        />
       </div>
-      
-      <div class="contactsCard" id="contact">
-        <article class="contacts">
-          <section class="contactsContent">
-            <p>
-              <i class="fa fa-mobile-phone" style="font-size: 48px"></i>
-              <span class="contact-info">+359 88 823 4675</span>
-            </p>
-            <p>
-              <i class="fa fa-envelope" style="font-size: 48px"></i>
-              <span class="contact-info">hijapogled@gmail.com</span>
-            </p>
-            <p>
-              <i class="fab fa-facebook" style="font-size: 48px"></i>
-              <span class="contact-info"><a href="#">"Хижа Поглед"</a></span>
-            </p>
-            <p>
-              <i class="fab fa-instagram" style="font-size: 48px"></i>
-              <span class="contact-info"><a href="#">"Хижа Поглед"</a></span>
-            </p>
-          </section>
-        </article>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <div class="imgSections">
+        <p>
+          Разполагаме с голяма зала, в която има работеща камина, климатик,
+          голям телевизор, безжичен интернет и телевизия.
+        </p>
+        <div class="scroll-container">
+          <img
+            src="./assets/img/Зала-1.jpg"
+            alt="Зала"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Зала-2.jpg"
+            alt="Зала"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Зала-3.jpg"
+            alt="Зала"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Зала-4.jpg"
+            alt="Зала"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Зала-5.jpg"
+            alt="Зала"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Зала-6.jpg"
+            alt="Зала"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Зала-7.jpg"
+            alt="Зала"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Зала-8.jpg"
+            alt="Зала"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+        </div>
+      </div>
+
+      <div class="imgSections">
+        <p>Така изглеждат нашите уютни стаи.</p>
+        <div class="scroll-container">
+          <img
+            src="./assets/img/Стая-1.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Стая-2.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Стая-3.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Стая-4.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Стая-5.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Стая-6.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Стая-7.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Стая-8.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Стая-9.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Стая-10.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="./assets/img/Стая-11.jpg"
+            alt="Стая"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+        </div>
+      </div>
+
+      <div class="imgSections">
+        <p>Допълнително са осигурени още 8 места, разделени в 3 стаи.</p>
+        <div class="scroll-container">
+          <img
+            src="./assets/img/База-1.jpg"
+            alt="База"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+        </div>
+      </div>
+
+      <div class="imgSections">
+        <p>
+          През 2024 г. решихме да направим и открит басейн само за гостите на
+          хижата.
+        </p>
+        <div class="scroll-container">
+          <img
+            src="./assets/img/Басейн.jpg"
+            alt="Басейн"
+            class="responsive"
+            onclick="openModal(this.src)"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Enlarged Image" />
       </div>
     </div>
 
@@ -142,107 +322,41 @@
         </article>
       </section>
     </div>
-
-    <div class="imgSections">
-      <p>Хижата се намира на тихо и спокойно място в горски район.</p>
-      <div class="scroll-container">
-        <img
-          src="./assets/img/Природа-1.jpg"
-          alt="Природа"
-          class="responsive"
-        />
-        <img
-          src="./assets/img/Природа-2.jpg"
-          alt="Природа"
-          class="responsive"
-        />
-        <img
-          src="./assets/img/Природа-3.jpg"
-          alt="Природа"
-          class="responsive"
-        />
-        <img
-          src="./assets/img/Природа-4.jpg"
-          alt="Природа"
-          class="responsive"
-        />
-        <img
-          src="./assets/img/Природа-5.jpg"
-          alt="Природа"
-          class="responsive"
-        />
-        <img
-          src="./assets/img/Природа-6.jpg"
-          alt="Природа"
-          class="responsive"
-        />
-        <img
-          src="./assets/img/Природа-7.jpg"
-          alt="Природа"
-          class="responsive"
-        />
-        <img
-          src="./assets/img/Природа-8.jpg"
-          alt="Природа"
-          class="responsive"
-        />
-        <img
-          src="./assets/img/Природа-9.jpg"
-          alt="Природа"
-          class="responsive"
-        />
-      </div>
-    </div>
-
-    <div class="gallery" id="gallery">
-      <div class="imgSections">
-        <p>
-          Разполагаме с голяма зала, в която има работеща камина, климатик, голям
-          телевизор, безжичен интернет и телевизия.
-        </p>
-        <div class="scroll-container">
-          <img src="./assets/img/Зала-1.jpg" alt="Зала" class="responsive" />
-          <img src="./assets/img/Зала-2.jpg" alt="Зала" class="responsive" />
-          <img src="./assets/img/Зала-3.jpg" alt="Зала" class="responsive" />
-          <img src="./assets/img/Зала-4.jpg" alt="Зала" class="responsive" />
-          <img src="./assets/img/Зала-5.jpg" alt="Зала" class="responsive" />
-          <img src="./assets/img/Зала-6.jpg" alt="Зала" class="responsive" />
-          <img src="./assets/img/Зала-7.jpg" alt="Зала" class="responsive" />
-          <img src="./assets/img/Зала-8.jpg" alt="Зала" class="responsive" />
-        </div>
+    <div class="user">
+      <div class="map-container">
+        <iframe
+          class="googleMap"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929.745403886897!2d27.12837187528625!3d42.75143851028696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a67bc07d76a70d%3A0x6a340c492d6c59d5!2z0KXQuNC20LAgItCf0L7Qs9C70LXQtCI!5e0!3m2!1sbg!2sbg!4v1737799182565!5m2!1sbg!2sbg"
+          width="300"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
 
-      <div class="imgSections">
-        <p>Местата са разпределени на две стаи с легла.</p>
-        <div class="scroll-container">
-          <img src="./assets/img/Стая-1.jpg" alt="Стая" class="responsive" />
-          <img src="./assets/img/Стая-2.jpg" alt="Стая" class="responsive" />
-          <img src="./assets/img/Стая-3.jpg" alt="Стая" class="responsive" />
-          <img src="./assets/img/Стая-4.jpg" alt="Стая" class="responsive" />
-          <img src="./assets/img/Стая-5.jpg" alt="Стая" class="responsive" />
-          <img src="./assets/img/Стая-6.jpg" alt="Стая" class="responsive" />
-          <img src="./assets/img/Стая-7.jpg" alt="Стая" class="responsive" />
-          <img src="./assets/img/Стая-8.jpg" alt="Стая" class="responsive" />
-          <img src="./assets/img/Стая-9.jpg" alt="Стая" class="responsive" />
-          <img src="./assets/img/Стая-10.jpg" alt="Стая" class="responsive" />
-          <img src="./assets/img/Стая-11.jpg" alt="Стая" class="responsive" />
-        </div>
-      </div>
-      
-      <!-- Fixed missing img src -->
-      <div class="imgSections">
-        <p>Допълнително са осигурени още 8 места в пристройката...</p>
-        <div class="scroll-container">
-          <img src="./assets/img/База-1.jpg" alt="База" class="responsive" />
-        </div>
-      </div>
-
-      <div class="imgSections">
-        <p>През 2024г. решихме да направим и открит басейн...</p>
-        <div class="scroll-container">
-          <!-- Add image source -->
-          <img src="./assets/img/Басейн.jpg" alt="Басейн" class="responsive" />
-        </div>
+      <div class="contactsCard" id="contact">
+        <article class="contacts">
+          <section class="contactsContent">
+            <p>
+              <i class="fa fa-mobile-phone" style="font-size: 48px"></i>
+              <span class="contact-info">+359 88 823 4675</span>
+            </p>
+            <p>
+              <i class="fa fa-envelope" style="font-size: 48px"></i>
+              <span class="contact-info">hijapogled@gmail.com</span>
+            </p>
+            <p>
+              <i class="fab fa-facebook" style="font-size: 48px"></i>
+              <span class="contact-info"><a href="#">"Хижа Поглед"</a></span>
+            </p>
+            <p>
+              <i class="fab fa-instagram" style="font-size: 48px"></i>
+              <span class="contact-info"><a href="#">"Хижа Поглед"</a></span>
+            </p>
+          </section>
+        </article>
       </div>
     </div>
   </body>

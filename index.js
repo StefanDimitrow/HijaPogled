@@ -9,3 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+function openModal(src) {
+  const modal = document.getElementById('myModal');
+  const modalImage = document.getElementById('modalImage');
+  modal.style.display = 'block';
+  modalImage.src = src;
+}
+
+function closeModal() {
+  const modal = document.getElementById('myModal');
+  modal.style.display = 'none';
+}

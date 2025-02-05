@@ -12,7 +12,7 @@ body {
 
 /* Header Image */
 .headerImg img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -24,7 +24,8 @@ body {
   height: 200px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-style: italic;
+  font-size: 3em;
   line-height: 50px;
 }
 .headerText a {
@@ -47,11 +48,11 @@ body {
 /* Navbar */
 .navbar {
   margin: 0;
-  padding: 5px 20px;
-  width: 100%;
+  padding: 0.3125rem 1.25rem; /* 5px 20px */
+  max-width: 100%;
   background-color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the buttons */
   align-items: center;
 }
 
@@ -64,7 +65,7 @@ body {
 }
 
 .nav-links li {
-  margin-right: 15px;
+  margin-right: 0.9375rem; /* 15px */
 }
 
 .navButton {
@@ -73,25 +74,13 @@ body {
   border: none;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   text-decoration: none;
-  padding: 10px;
+  padding: 1.5rem;
 }
 
 .navButton:hover {
   color: green;
-}
-
-/* Search Bar */
-.searchBar {
-  padding: 10px 15px;
-  background-color: white;
-  border: 2px solid white;
-}
-
-.searchBar:hover,
-.searchBar:focus {
-  border: 2px solid green;
 }
 
 /* Wrapper for Social Media Icons */
@@ -103,9 +92,9 @@ body {
 .wrapper .icon {
   background-color: #ffffff;
   border-radius: 50%;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
+  margin: 0.625rem; /* 10px */
+  width: 3rem; /* 80px */
+  height: 3rem; /* 80px */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,9 +120,6 @@ body {
   padding: 5px 8px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease-in-out;
 }
 
 .wrapper .tooltip::before {
@@ -260,26 +246,139 @@ body {
   font-size: 24px;
 }
 div.scroll-container {
-  margin: 1.5rem;
+  
   background-color: black;
   overflow: auto;
   white-space: nowrap;
-  padding: 10px;
+  
 }
 
 div.scroll-container img {
   padding: 10px;
+  cursor: pointer; /* Add cursor pointer to indicate clickable images */
 }
 
 .responsive {
-  max-width: 20%;
+  max-width: 50%;
   height: auto;
+}
+
+
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  z-index: 10;
+  font-size: 2rem;
+}
+
+.scroll-arrow.left {
+  left: 0;
+}
+
+.scroll-arrow.right {
+  right: 0;
+}
+
+/* Custom Scrollbar Styles */
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 2rem; /* Height of the horizontal scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #003a18; /* Color of the scrollbar thumb */
+  border-radius: 2rem; /* Rounded corners of the scrollbar thumb */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the scrollbar thumb on hover */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 80%;
+
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Google Maps*/
 .user {
   display: flex;
-  justify-content: center;
   padding: 1.5rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .headerImg img {
+    padding-top: 3em;
+    width: 100%;
+    height: auto;
+  }
+  .headerText {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+
+  .user {
+    display: block;
+  }
+  #contact {
+    margin: 0.5em;
+    padding: 0;
+    background-color: rgb(213, 240, 205);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    line-height: 20px;
+  }
+}
