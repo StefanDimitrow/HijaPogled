@@ -46,11 +46,9 @@
           href="https://www.facebook.com/profile.php?id=61555462030038"
           class="icon facebook"
         >
-          <div class="tooltip">Facebook</div>
           <span><i class="fab fa-facebook-f"></i></span>
         </a>
         <a href="#" class="icon instagram">
-          <div class="tooltip">Instagram</div>
           <span><i class="fab fa-instagram"></i></span>
         </a>
       </div>
@@ -281,14 +279,14 @@
       </div>
     </div>
 
-    
-
     <!-- The Modal -->
     <div id="myModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button class="modal-arrow left" onclick="prevImage()">&#9664;</button>
       <div class="modal-content">
-        <img id="modalImage" src="" alt="Enlarged Image">
+        <img id="modalImage" src="" alt="Enlarged Image" />
       </div>
+      <button class="modal-arrow right" onclick="nextImage()">&#9654;</button>
     </div>
 
     <div class="information" id="information">
