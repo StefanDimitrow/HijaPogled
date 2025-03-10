@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function openModal(src) {
   const modal = document.getElementById('myModal');
   const modalImage = document.getElementById('modalImage');
-  modal.style.display = 'block';
+  modal.style.display = 'flex'; // Use flex to center the content
   modalImage.src = src;
 }
 
