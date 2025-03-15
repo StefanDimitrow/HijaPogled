@@ -23,26 +23,9 @@ body {
   background-color: rgb(213, 240, 205);
   height: 200px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-size: 3em;
-  line-height: 50px;
-}
-.headerText a {
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  font-size: 30px;
-  border-style: inset;
-  border-radius: 10px;
-}
-.headerText a:hover {
-  color: green;
-}
-.headerText a:visited {
-  text-decoration: none;
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: #003a18;
 }
 
 /* Navbar */
@@ -73,7 +56,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Great Vibes";
   font-size: 2rem;
   text-decoration: none;
   padding: 1.5rem;
@@ -169,7 +152,8 @@ body {
 }
 
 .pogledInformation p {
-  font-size: 18px;
+  font-style: italic;
+  font-size: 1.5rem;
   color: #333;
   line-height: 1.6;
 }
@@ -241,28 +225,31 @@ body {
 .imgSections {
   text-align: center;
   margin: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(2, 85, 9);
-  font-size: 24px;
+  font-family: "Great Vibes";
+  color: #003a18;
+  font-size: 3rem;
 }
+
 div.scroll-container {
-  
-  background-color: black;
+  background-color: rgb(213, 240, 205);
   overflow: auto;
   white-space: nowrap;
-  
 }
 
 div.scroll-container img {
   padding: 10px;
   cursor: pointer; /* Add cursor pointer to indicate clickable images */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+div.scroll-container img:hover {
+  transform: scale(1.05); /* Zoom the image to 105% */
 }
 
 .responsive {
   max-width: 20%;
   height: auto;
 }
-
 
 .scroll-arrow {
   position: absolute;
@@ -311,13 +298,14 @@ div.scroll-container img {
 /* Modal styles */
 .modal {
   display: none; /* Hidden by default */
-  position:fixed;
+  position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   justify-content: center;
+  align-items: center;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -325,8 +313,8 @@ div.scroll-container img {
 .modal-content {
   margin: auto;
   display: block;
-  max-width: 50%;
-  max-height: 50%
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .modal-content img {
@@ -351,6 +339,27 @@ div.scroll-container img {
   cursor: pointer;
 }
 
+.modal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  z-index: 10;
+  font-size: 2rem;
+}
+
+.modal-arrow.left {
+  left: 10px;
+}
+
+.modal-arrow.right {
+  right: 10px;
+}
+
 /* Google Maps*/
 .user {
   display: flex;
@@ -371,6 +380,12 @@ div.scroll-container img {
     line-height: 2em;
   }
 
+  .imgSections{
+    font-size: 2em;
+  }
+  .pogledInformation{
+    font-size: 1em;
+  }
   .user {
     display: block;
   }
@@ -386,5 +401,9 @@ div.scroll-container img {
   }
   .scroll-container img {
     max-width: 30%;
+  }
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
   }
 }

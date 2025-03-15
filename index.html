@@ -3,18 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Хижа Погледсе намира на 530 м. над морското равнище в местността Къркатлъка
+    <meta
+      name="description"
+      content="Хижа Погледсе намира на 530 м. над морското равнище в местността Къркатлъка
     над село Тополица. Кристален планински въздух и уютна атмосфера за
     отмора от делничните дни. Разполага с 26 легла, разпределени в две
     стаи с четири легла, пет стаи с по три легла и три стаи с по две
     легла. Хижата разполага с четири бани със санитарни възли по две
     на етаж, кухня, зала с камина, безжичен интернет, отопление на
-    пелети, външен басейн." />
+    пелети, външен басейн."
+    />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
     />
     <title>Хижа Поглед</title>
   </head>
@@ -26,7 +35,7 @@
         <img src="./assets/Frame 1.png" alt="Лого на хижа Поглед" />
       </div>
       <div class="headerText">
-        <p>Насладете се на прекрасна природа и уютна обстановка при нас!</p>
+        <h1>Насладете се на прекрасна природа и уютна обстановка при нас!</h1>
       </div>
     </header>
 
@@ -37,11 +46,9 @@
           href="https://www.facebook.com/profile.php?id=61555462030038"
           class="icon facebook"
         >
-          <div class="tooltip">Facebook</div>
           <span><i class="fab fa-facebook-f"></i></span>
         </a>
         <a href="#" class="icon instagram">
-          <div class="tooltip">Instagram</div>
           <span><i class="fab fa-instagram"></i></span>
         </a>
       </div>
@@ -275,9 +282,11 @@
     <!-- The Modal -->
     <div id="myModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button class="modal-arrow left" onclick="prevImage()">&#9664;</button>
       <div class="modal-content">
         <img id="modalImage" src="" alt="Enlarged Image" />
       </div>
+      <button class="modal-arrow right" onclick="nextImage()">&#9654;</button>
     </div>
 
     <div class="information" id="information">
